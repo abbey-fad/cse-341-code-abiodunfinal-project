@@ -1,0 +1,165 @@
+// -----------------------
+// USERS TESTING
+// -----------------------
+
+### Get all users
+GET http://localhost:3000/users
+
+### Get user by Id
+GET http://localhost:3000/users/65123abcde1234567890fgh1
+
+### Create user
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Adeola Johnson",
+  "email": "adeola.johnson@example.com",
+  "oauthProvider": "github",
+  "oauthId": "12345678",
+  "role": "student",
+  "createdAt": "2025-09-30T12:00:00Z"
+}
+
+### Update user
+PUT http://localhost:3000/users/65123abcde1234567890fgh1
+Content-Type: application/json
+
+{
+  "name": "Adeola J. Johnson",
+  "email": "adeola.j@example.com",
+  "oauthProvider": "github",
+  "oauthId": "87654321",
+  "role": "teacher",
+  "createdAt": "2025-09-30T12:00:00Z"
+}
+
+### Delete user
+DELETE http://localhost:3000/users/65123abcde1234567890fgh1
+Content-Type: application/json
+
+
+
+// -----------------------
+// ASSIGNMENTS TESTING
+// -----------------------
+
+### Get all assignments
+GET http://localhost:3000/assignments
+
+### Get assignment by Id
+GET http://localhost:3000/assignments/65234bcdef234567890ghij2
+
+### Create assignment
+POST http://localhost:3000/assignments
+Content-Type: application/json
+
+{
+  "userId": "65123abcde1234567890fgh1",
+  "title": "Web Development Project",
+  "description": "Create a responsive portfolio website",
+  "dueDate": "2025-10-15T23:59:59Z",
+  "status": "pending",
+  "priority": "high",
+  "notes": "Include media queries and responsive design",
+  "courseId": "65345cdef34567890hijklm3"
+}
+
+### Update assignment
+PUT http://localhost:3000/assignments/65234bcdef234567890ghij2
+Content-Type: application/json
+
+{
+  "userId": "65123abcde1234567890fgh1",
+  "title": "Updated Portfolio Project",
+  "description": "Add blog section to the website",
+  "dueDate": "2025-10-20T23:59:59Z",
+  "status": "in-progress",
+  "priority": "medium",
+  "notes": "Check accessibility with Lighthouse",
+  "courseId": "65345cdef34567890hijklm3"
+}
+
+### Delete assignment
+DELETE http://localhost:3000/assignments/65234bcdef234567890ghij2
+Content-Type: application/json
+
+
+
+// -----------------------
+// COURSES TESTING
+// -----------------------
+
+### Get all courses
+GET http://localhost:3000/courses
+
+### Get course by Id
+GET http://localhost:3000/courses/65345cdef34567890hijklm3
+
+### Create course
+POST http://localhost:3000/courses
+Content-Type: application/json
+
+{
+  "courseName": "Introduction to Software Engineering",
+  "courseCode": "CSE101",
+  "description": "Foundations of software development and project management",
+  "teacherId": "65123abcde1234567890fgh9",
+  "semester": "Fall 2025",
+  "createdAt": "2025-09-30T12:00:00Z"
+}
+
+### Update course
+PUT http://localhost:3000/courses/65345cdef34567890hijklm3
+Content-Type: application/json
+
+{
+  "courseName": "Advanced Software Engineering",
+  "courseCode": "CSE201",
+  "description": "In-depth study of SDLC, Agile, and DevOps practices",
+  "teacherId": "65123abcde1234567890fgh9",
+  "semester": "Spring 2026",
+  "createdAt": "2025-09-30T12:00:00Z"
+}
+
+### Delete course
+DELETE http://localhost:3000/courses/65345cdef34567890hijklm3
+Content-Type: application/json
+
+
+
+// -----------------------
+// COMMENTS TESTING
+// -----------------------
+
+### Get all comments
+GET http://localhost:3000/comments
+
+### Get comment by Id
+GET http://localhost:3000/comments/65456defg4567890ijklmn45
+
+### Create comment
+POST http://localhost:3000/comments
+Content-Type: application/json
+
+{
+  "assignmentId": "65234bcdef234567890ghij2",
+  "userId": "65123abcde1234567890fgh1",
+  "commentText": "I need clarification on the portfolio requirements.",
+  "createdAt": "2025-09-30T13:00:00Z"
+}
+
+### Update comment
+PUT http://localhost:3000/comments/65456defg4567890ijklmn45
+Content-Type: application/json
+
+{
+  "assignmentId": "65234bcdef234567890ghij2",
+  "userId": "65123abcde1234567890fgh1",
+  "commentText": "I’ve updated my submission, kindly review again.",
+  "createdAt": "2025-09-30T14:00:00Z"
+}
+
+### Delete comment
+DELETE http://localhost:3000/comments/65456defg4567890ijklmn45
+Content-Type: application/json

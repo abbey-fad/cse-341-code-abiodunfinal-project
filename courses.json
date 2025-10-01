@@ -1,0 +1,32 @@
+[
+	{
+		"courseName": "Database Systems",
+		"courseCode": "CSE101",
+		"description": "Introduction to relational and NoSQL databases.",
+		"teacherId": "10054321",
+		"semester": "Fall 2025",
+		"createdAt": {
+			"$date": "2025-09-15T10:00:00Z"
+		}
+	},
+	{
+		"courseName": "Programming with JavaScript",
+		"courseCode": "CSE102",
+		"description": "Core JavaScript concepts including functions, arrays, and objects.",
+		"teacherId": "10054321",
+		"semester": "Fall 2025",
+		"createdAt": {
+			"$date": "2025-09-16T10:00:00Z"
+		}
+	},
+	{
+		"courseName": "Web Development Fundamentals",
+		"courseCode": "CSE103",
+		"description": "Learn HTML, CSS, and basics of responsive design.",
+		"teacherId": "10054321",
+		"semester": "Fall 2025",
+		"createdAt": {
+			"$date": "2025-09-17T10:00:00Z"
+		}
+	}
+]
