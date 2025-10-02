@@ -109,7 +109,7 @@ const updateAssignment = async (req, res) => {
 	}
 };
 
-// DELETE assignment
+// DELETE assignment.
 const deleteAssignment = async (req, res) => {
 	//#swagger.tags=['Assignments']
 	if (!ObjectId.isValid(req.params.id)) {
