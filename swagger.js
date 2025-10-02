@@ -1,4 +1,3 @@
-// swagger.js (in root folder)
 const swaggerAutogen = require('swagger-autogen')();
 
 const doc = {
@@ -7,11 +6,11 @@ const doc = {
 		description: 'API for managing users and assignments',
 		version: '1.0.0',
 	},
-	host: 'localhost:3000', // change this when deployed
+	host: 'localhost:3000',
 	schemes: ['http', 'https'],
 };
 
 const outputFile = './swagger.json';
-const endpointsFiles = ['./routes/index.js']; // your main routes entry file
+const endpointsFiles = ['./routes/index.js'];
 
 swaggerAutogen(outputFile, endpointsFiles, doc);

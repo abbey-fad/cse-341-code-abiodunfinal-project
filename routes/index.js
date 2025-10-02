@@ -1,7 +1,5 @@
-// routes/index.js
 const router = require('express').Router();
 
-// Swagger docs route (optional if you already set swagger in server.js)
 router.use('/', require('./swagger'));
 
 // Simple test route

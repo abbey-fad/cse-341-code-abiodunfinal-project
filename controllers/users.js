@@ -12,7 +12,7 @@ const getAll = async (req, res) => {
 	}
 };
 
-// GET /users/profile (mocked for now)
+// GET /users/profile
 const getProfile = async (req, res) => {
 	//#swagger.tags=['Users']
 	try {

@@ -1,4 +1,3 @@
-// routes/users.js
 const express = require('express');
 const router = express.Router();
 
@@ -12,9 +11,7 @@ router.get('/profile', usersController.getProfile);
 
 router.post('/', validation.saveUser, usersController.createUser);
 
-// Update a student account
 router.put('/:id', validation.saveUser, usersController.updateUser);
 
-// Delete a student account
 router.delete('/:id', usersController.deleteUser);
 module.exports = router;

@@ -1,6 +1,5 @@
 const validator = require('../helpers/validate');
 
-// Validation rules for users
 const saveUser = (req, res, next) => {
 	const validationRule = {
 		name: 'required|string',
@@ -21,7 +20,6 @@ const saveUser = (req, res, next) => {
 	});
 };
 
-// Validation rules for assignments
 const saveAssignment = (req, res, next) => {
 	const validationRule = {
 		title: 'required|string',
